@@ -7,7 +7,7 @@ function App() {
 
   const fetchBackendMessage = async () => {
     try {
-      const response = await fetch('http://demo-alb-250603071.eu-central-1.elb.amazonaws.com/hello');
+      const response = await fetch('http://52.28.136.143/hello');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
