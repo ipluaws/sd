@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [message] = useState('Welcome to the React App CI CD');
+  const [message, setMessage] = useState('Welcome to the React App');
   const [backendMessage, setBackendMessage] = useState('');
 
   const fetchBackendMessage = async () => {
     try {
-      const response = await fetch('http://YOUR_BACKEND_API_URL/hello');
+      const response = await fetch('http://demo-alb-250603071.eu-central-1.elb.amazonaws.com/hello');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -31,4 +31,3 @@ function App() {
 }
 
 export default App;
-
