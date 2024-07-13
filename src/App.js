@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [message, setMessage] = useState('Welcome to the React App CI/CD');
+  const [message, setMessage] = useState('Welcome to the React App CI CD');
   const [backendMessage, setBackendMessage] = useState('');
 
   const fetchBackendMessage = async () => {
