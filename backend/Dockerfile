@@ -23,7 +23,7 @@ FROM adoptopenjdk:11-jre-hotspot AS production
 WORKDIR /app
 
 # Copy the JAR file from the build stage
-COPY --from=build /app/target/backend.jar ./app.jar
+COPY --from=build /app/backend.jar ./app.jar
 
 # Expose the port
 EXPOSE 8080
