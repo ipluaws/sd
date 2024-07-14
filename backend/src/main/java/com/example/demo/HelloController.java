@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @CrossOrigin(origins = "https://d2exsd50zeg79m.cloudfront.net")
     @GetMapping("/hello")
-    public String hello() {
-        return "Hello from the backend!";
+    public Map<String, String> hello() {
+        Map<String, String> response = new HashMap<>();
+        response.put("message", "Hello from the backend!");
+        return response;
     }
 }
 
