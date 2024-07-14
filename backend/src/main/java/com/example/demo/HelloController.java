@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class HelloController {
-    @CrossOrigin(origins = "https://your-cloudfront-domain")
+    @CrossOrigin(origins = "https://d2exsd50zeg79m.cloudfront.net")
     @GetMapping("/hello")
     public String hello() {
         return "Hello from the backend!";
