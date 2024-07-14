@@ -11,7 +11,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api")
 public class HelloController {
-    @CrossOrigin(origins = {"https://d2exsd50zeg79m.cloudfront.net", "https://d316gw264jgmhr.cloudfront.net"})
+    @CrossOrigin(origins = "https://d3298bfp4mz9ok.cloudfront.net/")
     @GetMapping("/hello")
     public Map<String, String> hello() {
         Map<String, String> response = new HashMap<>();
