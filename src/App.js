@@ -7,7 +7,7 @@ function App() {
 
   const fetchBackendMessage = async () => {
     try {
-      const response = await fetch('https://d2exsd50zeg79m.cloudfront.net/api/hello');
+      const response = await fetch('https://d3298bfp4mz9ok.cloudfront.net/api/hello');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
